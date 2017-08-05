@@ -64,6 +64,12 @@ class UserCrudController extends CrudController
                 'type'  => 'email',
             ],
             [
+                'name'  => 'type',
+                'label' => trans('backpack::permissionmanager.user_type'),
+                'type'  => 'select_from_array',
+                'options' => [0=>'普通用户', 1=>'后台员工', 2=>'商家'],
+            ],
+            [
                 'name'  => 'password',
                 'label' => trans('backpack::permissionmanager.password'),
                 'type'  => 'password',
